@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Inicio</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header></header> 
+    <nav class="side-nav"></nav>
+            <!-- Botón de menú para dispositivos pequeños -->
+            <div class="menu-button" onclick="toggleSideNav()">
+                <i class="fas fa-bars"></i>
+            </div>
+
+        <!-- Primera Sección: Carrusel de imágenes -->
+        <section class="carousel">
+            <div class="carousel-item">
+                <a href="pagina1.html"><img src="img/fraccionamiento.png" alt="Imagen del Fraccionamiento"></a>
+                <div class="carousel-text">
+                    <h2>Fraccionamiento</h2>
+                    <p>Facilita la administración de tu comunidad desde cualquier lugar</p>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <a href="pagina2.html"><img src="img/guardias.jpg" alt="Otra imagen del fraccionamiento"></a>
+                <div class="carousel-text">
+                    <h2>Seguridad</h2>
+                    <p>Monitorea la seguridad de tu comunidad en tiempo real</p>
+                </div>
+            </div>
+            <!-- Añade más elementos del carrusel según sea necesario -->
+            <div class="carousel-controls">
+                <span class="prev" onclick="prevSlide()">&#10094;</span>
+                <span class="next" onclick="nextSlide()">&#10095;</span>
+            </div>
+            <div class="carousel-dots">
+                <!-- Los puntos se generarán dinámicamente aquí -->
+            </div>
+        </section>
+
+
+
+    <!-- Segunda Sección: Íconos para accesos rápidos con círculo -->
+    <section class="quick-access">
+        <div class="container">
+            <div class="icon-box">
+                <div class="icon-circle">
+                    <i class="fas fa-home"></i>
+                </div>
+                <div class="icon-text">
+                    <h3>Realiza tus pagos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit a nunc sociosqu nam hac diam nec sem cur.</p>
+                </div>
+            </div>
+            <div class="icon-box">
+                <div class="icon-circle">
+                    <i class="fas fa-calendar"></i>
+                </div>
+                <div class="icon-text">
+                    <h3>Organiza eventos</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit a nunc sociosqu nam hac diam nec sem cur.</p>
+                </div>
+            </div>
+            <div class="icon-box">
+                <div class="icon-circle">
+                    <i class="fas fa-bell"></i>
+                </div>
+                <div class="icon-text">
+                    <h3>Avisos y reportes</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit a nunc sociosqu nam hac diam nec sem cur.</p>
+                </div>
+            </div>
+            <div class="icon-box">
+                <div class="icon-circle">
+                    <i class="fas fa-user"></i>
+                </div>
+                <div class="icon-text">
+                    <h3>Administra visitas</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit a nunc sociosqu nam hac diam nec sem cur.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="security">
+        <div class="security-text">
+            <h2>Sistema de Cámaras 24 hrs</h2>
+            <p>Acceso a cámaras compartidas y privadas para la seguridad del vecindario. 
+                Nuestro sistema de vigilancia de última tecnología asegura que siempre estés al tanto de lo que sucede en tu comunidad. 
+                Desde cualquier lugar y en cualquier momento, puedes monitorear y controlar el acceso, manteniendo tu hogar 
+                y familia protegidos. La seguridad nunca ha sido tan accesible y eficiente.</p>
+            <button class="btn-yellow">Visitar</button>
+        </div>
+    </section>
+    
+
+    <!-- Cuarta Sección: Funciones Relevantes con fondo verde -->
+    <section class="relevant-functions">
+        <div class="container">
+            <div class="function-box">
+                <i class="fas fa-file-invoice"></i>
+                <p>Facturas</p>
+            </div>
+            <div class="function-box">
+                <i class="fas fa-chart-line"></i>
+                <p>Ranking Vecinal</p>
+            </div>
+            <div class="function-box">
+                <i class="fas fa-poll"></i>
+                <p>Encuestas</p>
+            </div>
+            <div class="function-box">
+                <i class="fas fa-newspaper"></i>
+                <p>Suscripciones</p>
+            </div>
+            <div class="function-box">
+                <i class="fas fa-calendar-week"></i>
+                <p>Eventos Semanales</p>
+            </div>
+            <div class="function-box">
+                <i class="fas fa-building"></i>
+                <p>Propiedades</p>
+            </div>
+            <div class="function-box">
+                <i class="fas fa-bell"></i>
+                <p>Alertas</p>
+            </div>
+            <div class="function-box">
+                <i class="fas fa-globe"></i>
+                <p>Idioma</p>
+            </div>
+        </div>
+    </section>
+    <footer></footer>
+    <script src="js/script.js"></script>
+
+</body>
+</html>

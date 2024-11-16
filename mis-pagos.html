@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Pagos</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <script defer src="js/script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header></header>
+
+    <nav class="side-nav"></nav>
+
+    <!-- Botón de menú para dispositivos pequeños -->
+    <div class="menu-button" onclick="toggleSideNav()">
+        <i class="fas fa-bars"></i>
+    </div>
+
+    <div class="container">
+        <!-- Título principal -->
+        <div class="page-title">
+            <h1>Mis Pagos</h1>
+            <div class="page-title-buttons">
+                <button onclick="showSection('panel-control')"><i class="fas fa-tachometer-alt"></i></button>
+                <button onclick="showSection('suscripciones')"><i class="fas fa-newspaper"></i></button>
+                <button onclick="showSection('facturas')"><i class="fas fa-file-invoice"></i></button>
+                <button onclick="showSection('metodos-pago')"><i class="fas fa-credit-card"></i></button>
+            </div>
+        </div>
+
+        <div class="distributor">
+            <!-- Barra lateral -->
+            <div class="sidebar">
+                <ul>
+                    <li class="active" onclick="showSection('panel-control')">Panel de Control</li>
+                    <li onclick="showSection('suscripciones')">Suscripciones</li>
+                    <li onclick="showSection('facturas')">Facturas</li>
+                    <li onclick="showSection('metodos-pago')">Métodos de Pago</li>
+                </ul>
+            </div>
+
+            <!-- Contenedor principal -->
+            <div class="main-content">
+                <section id="panel-control" class="content-section active">
+                    <div class="column">
+                        <h2>Mensualidades</h2>
+                        <div class="box">
+                            <h3>Mensualidad Octubre</h3>
+                            <p>Pagado</p>
+                            <ul>
+                                <li>Pagos de Seguridad:</li>
+                                <li>Cámaras de Videovigilancia - $120
+                                <li>Guardia de Seguridad - $250</li>
+                                <li>Amenidades:</li>
+                                <li>Gimnasio - $320</li>
+                                <li>SPA - $200</li>
+                                <li>Mantenimiento de parque - $500</li>
+                            </ul>
+                            <p>Total: $2790</p>
+                            <button class="btn-green-strong">Imprimir Ticket</button>
+                        </div>
+                    </div>
+                    <div class="column">
+                        <h2>Eventos y Tratos Vecinales</h2>
+                        <div class="box">
+                            <h3>Festival Navideño</h3>
+                            <p>Pendiente</p>
+                            <p>Fecha: 12 de diciembre de 2024</p>
+                            <p>Cuota: $100</p>
+                            <button class="btn-yellow">Pagar</button>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="suscripciones" class="content-section">
+                    <h2>Suscripciones</h2>
+                    <!-- Contenido de Suscripciones -->
+                </section>
+
+                <section id="facturas" class="content-section">
+                    <h2>Facturas</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Código Producto</th>
+                                <th>Producto</th>
+                                <th>Referencia</th>
+                                <th>Descripción</th>
+                                <th>Imprimir</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <!-- Ejemplo de una fila de factura -->
+                            <tr>
+                                <td>220401</td>
+                                <td>Mensualidad Octubre</td>
+                                <td>17080000002134</td>
+                                <td>Pago mensualidad fraccionamiento</td>
+                                <td><button class="btn-green-strong">Imprimir</button></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </section>
+
+                <section id="metodos-pago" class="content-section">
+                    <h2>Métodos de Pago</h2>
+                    <!-- Contenido de Métodos de Pago -->
+                </section>
+            </div>
+        </div>
+    </div>  
+    <footer></footer>
+</body>
+</html>
