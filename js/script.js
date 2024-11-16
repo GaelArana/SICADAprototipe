@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", function() {
                 <img src="img/logo.png" alt="Logo Empresa" class="logo">
                 <div class="header-right">
                     <nav class="nav-menu">
-                        <a href="inicio.html">Inicio</a>
+                        <a href="index.html">Inicio</a>
                         <a href="404.html">Mi Colonia</a>
                         <a href="404.html">Cámaras</a>
                         <a href="mis-pagos.html">Mis Pagos</a>
@@ -71,7 +71,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     sidenav.innerHTML = `
     <div class="side-nav-content">
-        <a href="inicio.html"><i class="fas fa-home"></i><span class="link-text">Inicio</span></a>
+        <a href="index.html"><i class="fas fa-home"></i><span class="link-text">Inicio</span></a>
         <a href="404.html"><i class="fas fa-city"></i><span class="link-text">Mi Colonia</span></a>
         <a href="404.html"><i class="fas fa-video"></i><span class="link-text">Cámaras</span></a>
         <a href="mis-pagos.html"><i class="fas fa-wallet"></i><span class="link-text">Mis Pagos</span></a>
