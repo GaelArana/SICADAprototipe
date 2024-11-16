@@ -659,6 +659,7 @@ footer button:hover {
     flex-grow: 1;
     background: #b6ecd1;
     padding: 20px;
+    height: 100vh;
 }
 
 .content-section {
